@@ -3,7 +3,7 @@ import {View, Text, Button,Image} from 'react-native'
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 export default function Images () {   
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>        
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,backgroundColor:'green'}}>        
 <ReactNativeZoomableView
    maxZoom={1.5}
    minZoom={0.5}   
@@ -21,7 +21,7 @@ export default function Images () {
            style={{ width: 200, height: 200 , textAlign:'center'}}
          />      
 </ReactNativeZoomableView>           
-<View >      
+<View style={{backgroundColor:'green'}} >      
          {/* <Image
            source={{
              uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkgXWUMr_Vcw6KhaHLTy0SNSljgWrMIi5rFQ&usqp=CAU',

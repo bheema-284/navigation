@@ -219,12 +219,15 @@ function About({route, navigation}) {
     padding: 10,
     width:'40%',    
     marginBottom:5,
-    marginTop:5
+    marginTop:5,
+    borderRadius:10,
     },
   countContainer: {
     alignItems: "center",
     padding: 10,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    width:'45.5%',
+    borderRadius:10
   },
   container: {
     alignItems: "center",
@@ -232,11 +235,12 @@ function About({route, navigation}) {
     cursor: 'pointer'
   },
   countText: {
-    color: "white",
-    backgroundColor: "cyan",
-    width:160,
+    color: "orange",
+    backgroundColor: "green",
+    width:'100%',
     textAlign: "center",
-    fontSize:30
+    fontSize:30,
+    borderRadius:10
   },
   container2: {
     flex: 0,

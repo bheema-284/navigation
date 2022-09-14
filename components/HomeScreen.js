@@ -11,7 +11,10 @@ export default function About ({navigation}) {
             }  
             const imagesPage= ()=>{
                 navigation.navigate('Images')
-                }     
+                } 
+                const videosPage= ()=>{
+                  navigation.navigate('Videos')
+                  }     
   return (
     <>
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -45,7 +48,10 @@ export default function About ({navigation}) {
       </View>  
       <View style={{marginBottom:20,marginTop:20}}>
       <Button title='Go to About' onPress={aboutPage}/>
-      </View>    
+      </View> 
+      <View style={{marginBottom:20,marginTop:20}}>
+      <Button title='Go to Video' onPress={videosPage}/>
+      </View>   
       <Button title='Go to Images' onPress={imagesPage}/>    
    </View>
    </>

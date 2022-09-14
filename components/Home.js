@@ -30,6 +30,9 @@ const Home = ({navigation}) =>{
     return(
     <>
     <ScrollView>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor:'orange' }}>
+      <Text style={{textAlign:'center',fontSize:20,fontWeight:'bold',color:'green'}}>Ecommerce Page</Text>
+    </View> 
     <View style={styles.MainContainer}>
     {isLoading ? <ActivityIndicator/> : (
       <FlatList          

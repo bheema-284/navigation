@@ -6,6 +6,7 @@ import HomeScreen from './components/HomeScreen'
 import Home from './components/Home'
 import About from './components/About'
 import Images from './components/Images'
+import Videos from './components/Videos'
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -14,7 +15,8 @@ export default function App() {
     <Stack.Screen  name = "HomeScreen" component = {HomeScreen}/>
     <Stack.Screen  name = "Home" component = {Home} options={{ headerShown: false }}/>
     <Stack.Screen  name = "About" component = {About} options={{title: 'Introduction' }}/>
-    <Stack.Screen  name = "Images" component = {Images} options={{title: 'Images' }}/>    
+    <Stack.Screen  name = "Images" component = {Images} options={{title: 'Images' }}/> 
+    <Stack.Screen  name = "Videos" component = {Videos} options={{title: 'Videos' }}/>    
   </Stack.Navigator>  
     </NavigationContainer>
   );
